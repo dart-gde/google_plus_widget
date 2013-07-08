@@ -24,7 +24,7 @@ In the html file import and include the google plus login web component.
   <body>
     <!-- Add a google plus signin widget -->
     <div is="x-google-plus-login"
-         client-id="299615367852.apps.googleusercontent.com"
+         client-id="CLIENT_ID"
          theme="light"
          authentication-context="{{authenticationContext}}"
          sign-in-callback="{{onSignInCallback}}"
