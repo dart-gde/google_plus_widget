@@ -10,10 +10,14 @@
   </head>
   <body>
     <h1>Google Plus Widget</h1>
+    <!-- Add a google plus signin widget -->
     <div is="x-google-plus-login"
          client-id="299615367852.apps.googleusercontent.com"
          theme="light"
-         authentication-context="{{authenticationContext}}"></div>
+         authentication-context="{{authenticationContext}}"
+         sign-in-callback="{{onSignInCallback}}"
+         sign-out-callback="{{onSignOutCallback}}"
+         error-callback="{{onErrorCallback}}"></div>
     <script type="application/dart" src="gplus_widget.dart"></script>
     <script src="packages/browser/dart.js"></script>
     <script src="packages/browser/interop.js"></script>

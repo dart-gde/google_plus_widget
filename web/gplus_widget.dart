@@ -6,15 +6,19 @@ import "package:google_plus_v1_api/plus_v1_api_browser.dart";
 // Simple Authentication class that takes the token from the Sign-in button
 SimpleOAuth2 authenticationContext;
 
-// initial value for click-counter
-int startingCount = 5;
+onSignInCallback(SimpleOAuth2 authContext, [Map authResult]) {
+  print("SignInCallback");
+  print("authResult = $authResult");
+}
 
-/**
- * Learn about the Web UI package by visiting
- * http://www.dartlang.org/articles/dart-web-components/.
- */
+onSignOutCallback() {
+  print("onSignOutCallback");
+}
+
+onErrorCallback(error) {
+  print("onErrorCallback($error)");
+}
+
 void main() {
   authenticationContext = new SimpleOAuth2(null);
-  // Enable this to use Shadow DOM in the browser.
-  //useShadowDom = true;
 }

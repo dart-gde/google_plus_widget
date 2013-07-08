@@ -7,17 +7,17 @@ import "package:google_oauth2_client/google_oauth2_browser.dart";
 /**
  * Sign-in callback signature. 
  */
-typedef OnSignInCallback(SimpleOAuth2 authenticationContext, [Map authResult]);
+typedef void OnSignInCallback(SimpleOAuth2 authenticationContext, [Map authResult]);
 
 /**
  * Sign-out callback signature.
  */
-typedef OnSignOutCallback();
+typedef void OnSignOutCallback();
 
 /**
  * On error signature.
  */
-typedef OnErrorCallback(error);
+typedef void OnErrorCallback(error);
 
 /**
  * Google plus login web component.
