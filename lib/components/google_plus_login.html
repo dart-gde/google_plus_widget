@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <element name="x-google-plus-login" extends="div" constructor="GooglePlusLogin">
+      <template>
+        <template if="!isConnected">
+          <div id="google-connect">
+            <!-- if the user is not connected then display the google plus button -->
+              <button class="g-signin"
+                  data-scope="{{scope}}"
+                  data-requestvisibleactions="{{requestvisibleactions}}"
+                  data-clientId="{{clientId}}"
+                  data-callback="onSignInCallback"
+                  data-theme="{{theme}}"
+                  data-cookiepolicy="{{cookiepolicy}}"
+                  data-width="{{width}}"
+                  data-height="{{height}}"
+                  data-approvalprompt="{{approvalprompt}}"
+                  data-accesstype="{{accesstype}}"></button>
+          </div>
+        </template>
+        
+        <!-- disconnect button displayed if user is connected -->
+        <template if="isConnected">
+          <div class="sign-out">
+            <button id="disconnect" on-click="disconnect($event)">Sign out</button>
+          </div>
+        </template>
+      </template>
+      <script type="application/dart" src="google_plus_login.dart"></script>
+    </element>
+  </body>
+</html>

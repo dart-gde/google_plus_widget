@@ -1,0 +1,10 @@
+name: google_plus_widget
+version: 0.0.1
+author: Adam Singer <financeCoding@gmail.com>
+description: A Google Plus Login Widget
+homepage: https://github.com/financeCoding
+dependencies:
+  browser: any
+  google_plus_v1_api: any
+  js: any
+  web_ui: any

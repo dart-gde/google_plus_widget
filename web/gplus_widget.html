@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example of google plus widget</title>
+    <link rel="stylesheet" href="gplus_widget.css">
+    <!-- import the google plus login widget -->
+    <link rel="import" href="packages/google_plus_widget/components/google_plus_login.html">
+  </head>
+  <body>
+    <h1>Google Plus Widget</h1>
+    <div is="x-google-plus-login"
+         client-id="299615367852.apps.googleusercontent.com"
+         theme="light"
+         authentication-context="{{authenticationContext}}"></div>
+    <script type="application/dart" src="gplus_widget.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+    <script src="packages/browser/interop.js"></script>
+  </body>
+</html>
