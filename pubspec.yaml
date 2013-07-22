@@ -1,5 +1,5 @@
 name: google_plus_widget
-version: 0.0.1-dev
+version: 0.0.1
 author: Adam Singer <financeCoding@gmail.com>
 description: A Google Plus Login Widget
 homepage: https://github.com/dart-gde/google_plus_widget
